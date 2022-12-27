@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+*{
+    outline: 1px solid red;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -26,7 +29,7 @@ header nav a {
 
 }
     
-@media(max-width:930px){
+@media(max-width:1366px){
     .fa-bars{
         display: flex;
     }
@@ -36,3 +39,111 @@ header nav a {
     }
 }
 
+/* introduction section code start */
+
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+    flex-wrap: wrap;
+    
+}  
+
+
+.introduction h1{
+    font-size: 62px;
+    font-weight: 700;
+    background-color: red;
+}
+
+.introduction .left-side h1 span{
+    color: #FF8A56;
+}
+
+
+.introduction .left-side {
+    padding-top: 133px;
+    min-width: 642px;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction .left-side p {
+    padding-top: 34px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+
+}
+
+.introduction .left-side button{
+    width: 131px;
+    height: 48px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+
+
+.introduction .left-side .button-groups{
+    padding-top: 38px;
+    display: flex;
+    align-items: center;
+
+}
+
+.introduction .left-side .button-groups a{
+    color: #000;
+    margin-left: 35px;
+}
+
+
+.button-groups{
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:1380px) and (min-width:642px){
+    .introduction{
+        flex-basis: 100%;
+        align-items: center;
+
+    }
+
+    .introduction .right-side{
+        margin: 0 auto;
+    }
+
+    .introduction .left-side{
+        margin: 0 auto
+    }
+
+}
+
+@media(max-width:755px){
+   
+   .introduction{
+    padding-left: 28px;
+   }
+   
+    .introduction .left-side{
+        min-width: 500px;
+    }
+
+    .introduction .left-side h1{
+        font-size: 58px;
+        text-align: center;
+    }
+
+    .introduction .left-side p {
+        text-align: center;
+    }
+    .button-groups{
+        margin: 20px aut;
+    }
+   
+}
+/* introduction section code end */
